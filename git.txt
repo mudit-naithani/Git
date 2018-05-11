@@ -1,0 +1,40 @@
+git init					- intialize the local rpo
+
+Configuration:
+git config --global user.name "username"
+git config --global user.email "userid"
+
+to check the logs of commits 			- git log --stat
+
+Cloning a remote repo				- git clone id@host:/path to repo
+
+Adding files					- git add <filename>, git add *, git add .
+
+reverting a commit				- git revert <commit id>
+
+squashins last N commmits to a single commits   - git reset -soft HEAD~N && git commit
+
+Finding a commit which created a bug 		- git bisect <subcommand> <options>
+
+Moving to a different branch 			- git checkout <branch>    **If branch does not exist, it gets created**
+
+Merge a branch to the current branch		- git rebase <branch>
+
+find files that have changed in a commit	- git diff-tree -r <commit id>
+
+branches which have merged to current branch	- git branch -merged       **Opposite of git branch -no-merged**
+
+to commit forgotten files			- git add . and then git commit --amend
+
+to drop down current work but save it 		- git stash
+to get the saved work back			- git stash pop
+
+to choose a commit from one branch and apply it onto another - git cherry-pick <commit-id>
+
+
+
+
+
+
+
+
